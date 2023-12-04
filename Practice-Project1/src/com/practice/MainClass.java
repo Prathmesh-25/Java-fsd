@@ -1,4 +1,4 @@
- 
+
 package com.practice; 
  
 import java.util.Scanner; 
@@ -24,7 +24,7 @@ public class MainClass {
   Calculator calc = new Calculator(); 
    
   //Using if else if statement for validating option and 
-  // performing associated operations 
+  //performing associated operations 
   //by calling the functions from calculator class 
   if (option == 1) { 
             calc.add(num1, num2); 
