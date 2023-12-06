@@ -8,8 +8,8 @@ public static  void main(String[] args){
 
     int[] a = {5,10,15,20,25};
     int l= a.length;
-    int v = 15;
-    int outcome = exponentialSearch(a,l,v);
+    int key = 15;
+    int outcome = exponentialSearch(a,l,key);
 
     if(outcome<0){
 
