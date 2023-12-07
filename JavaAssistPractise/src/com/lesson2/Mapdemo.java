@@ -18,7 +18,6 @@ public class Mapdemo {
 	      }
 	      
 	     //HashTable
-	       
 	      Hashtable<Integer,String> ht=new Hashtable<Integer,String>();  
 	      
 	      ht.put(4,"Ales");  
@@ -31,9 +30,7 @@ public class Mapdemo {
 	       System.out.println(n.getKey()+" "+n.getValue());    
 	      }
 	      
-	      
 	      //TreeMap
-	      
 	      TreeMap<Integer,String> map=new TreeMap<Integer,String>();    
 	      map.put(8,"Annie");    
 	      map.put(9,"Carlotte");    
