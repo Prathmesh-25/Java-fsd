@@ -1,0 +1,1 @@
+This is a program for File Handling. Appending text to a file.
