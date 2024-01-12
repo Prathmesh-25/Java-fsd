@@ -1,0 +1,23 @@
+<!-- hibernate.cfg.xml -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection properties -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ecommerce</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Shiv@vardan1</property>
+
+        <!-- Hibernate dialect for MySQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Mention annotated class -->
+        <mapping class="com.practice.Product"/>
+        <mapping resource="com/practice/Product.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
