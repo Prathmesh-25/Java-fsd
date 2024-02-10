@@ -1,0 +1,40 @@
+/* home.component.css */
+
+.mat-card {
+    width: 100%;
+    /* margin: auto; */
+    /* padding: 20px; */
+  }
+  
+  .content {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .greeting {
+    color: #e95b3b; /* customizable colour */
+  }
+  
+  .intro {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mat-card-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  

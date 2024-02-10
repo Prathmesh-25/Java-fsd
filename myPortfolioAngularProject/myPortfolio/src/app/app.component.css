@@ -1,0 +1,6 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.routerLink {
+  margin-right: 10px;
+}

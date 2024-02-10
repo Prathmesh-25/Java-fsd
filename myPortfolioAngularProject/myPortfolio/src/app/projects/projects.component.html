@@ -1,0 +1,22 @@
+<!-- projects.component.html -->
+
+<div class="mat-card">
+    <div class="mat-card-header">
+      <h1 class="mat-display-1">My Projects</h1>
+    </div>
+    <div class="mat-card-content">
+      <div class="project-cards">
+        <mat-card *ngFor="let project of projectsData">
+          <mat-card-header>
+            <mat-card-title>{{ project.name }}</mat-card-title>
+            <mat-card-subtitle>{{ project.technologies }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{ project.image }}" alt="{{ project.name }}">
+          <mat-card-content>
+            <p class="mat-body-2">{{ project.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

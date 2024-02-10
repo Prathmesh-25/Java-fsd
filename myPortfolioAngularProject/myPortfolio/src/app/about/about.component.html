@@ -1,0 +1,28 @@
+<!-- about.component.html -->
+
+<div class="container">
+    <div class="mat-card-header">
+      <div class="mat-display-4"></div>
+    </div>
+    <h1 class="mat-display-1">About Me</h1>
+    <div class="mat-card-content">
+      <p class="mat-body-1">
+        Hello! I'm a Learner working on using angular for developing my portfolio.
+      </p>
+
+      <div class="education-cards">
+        <h1 class="mat-display-1">More Info</h1>
+        <mat-card class="card"*ngFor="let education of educationData">
+          <mat-card-header>
+            <mat-card-title>{{ education.degree }}</mat-card-title>
+            <mat-card-subtitle>{{ education.institution }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="mat-body-2">{{ education.branch }}</p>
+            <p class="mat-body-2">Graduated in {{ education.year }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
