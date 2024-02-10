@@ -1,0 +1,72 @@
+<div class="text-white" style="padding-top: 50px;">
+    <div class="container">
+      <div class="row" style="padding-top: 20px;">
+  
+        <div class="col-12" >
+          <table class="table table-light">
+            <thead class="p-3 mb-2 bg-success text-black">
+             <tr><td colspan="4"> Details of <strong>{{employeeData.first_name}}</strong>&nbsp;<strong>{{employeeData.last_name}}</strong></td></tr>
+              <tr>
+                <td scope="col" class="bold-text">Employee Id</td>
+                <td>{{employeeData.id}}</td>
+              </tr>
+              <tr>
+                <th scope="col" class="bold-text">Employee First Name</th>
+                <td>{{employeeData.first_name}}</td>
+              </tr>
+              <tr>
+                <th scope="col" class="bold-text">Employee Last Name</th>
+                <td>{{employeeData.last_name}}</td>
+            </tr>
+              <tr>
+                <th scope="col" class="bold-text">Employee Email</th>
+                <td>{{employeeData.email}}</td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <button (click)="onEmployeeListHandler()" class="btn btn-primary">Employee List</button> &nbsp;
+                  <button (click)="onDeleteHandler(employeeData)" class="btn btn-danger" >Delete</button>  &nbsp;
+                  <button (click)="onEmpBtnClick(employeeData)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">Update</button>
+                </td>                  
+              </tr>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog"  style="margin-top: 150px;">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Employee Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="employeeForm">
+              <div class="form-group">
+                <label for="id" >ID</label>
+                <input type="input" class="form-control" placeholder="Enter Id" id="id" formControlName="id">
+              </div>
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="input" class="form-control" placeholder="Enter Fisrt Name" id="first_name" formControlName="first_name">
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="input" class="form-control" placeholder="Enter Last Name" id="last_name" formControlName="last_name">
+              </div>
+              <div class="form-group">
+                <label for="username">Email</label>
+                <input type="input" class="form-control" placeholder="Enter Email" id="email" formControlName="email">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" (click)="onSave()" data-bs-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

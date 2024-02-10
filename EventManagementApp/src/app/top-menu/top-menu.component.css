@@ -1,0 +1,11 @@
+.portal-link {
+    font-size: 18px; 
+  }
+.nav-masthead{
+    float: left !important;
+}
+.nav-below-border{
+    color:rgb(22, 11, 11);
+    width: 85%;
+    margin: auto;
+}
